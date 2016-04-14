@@ -838,11 +838,16 @@ dt {
   background-position: center top;
   background-size: cover;
   color: $color_white;
-  padding: 2em 0 5em;
+  padding: 2em 0;
   position: relative;
+
   @include respond-min($main_menu-mobile_menu_cutoff) {
-    padding: 5em 0 8em;
+    padding: 6em 0;
     background-image: image-url('homepage-background.jpg');
+  }
+
+  @media (min-width: $main_menu-mobile_menu_cutoff) and (min-height: 700px) {
+    padding: 8em 0;
   }
 
   a {
