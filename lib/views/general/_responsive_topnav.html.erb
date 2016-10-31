@@ -1,5 +1,5 @@
 <div id="topnav" class="topnav">
-  <ul id="navigation" class="navigation">
+  <ul id="navigation" class="navigation" role="navigation">
 
     <li class="<%= 'selected' if params[:controller] == 'request' and ['new', 'select_authority'].include?(params[:action]) %>">
       <%= link_to _("Make a request"), select_authority_path, :id => 'make-request-link' %>
@@ -26,8 +26,12 @@
         <label class="visually-hidden" for="navigation_search_button">
           <%= _("Search") %>
         </label>
-        <%= text_field_tag 'query', params[:query], { :class => "navigation_search_button", :id => "navigation_search_button", :type => "search", :placeholder => _("Search all requests and authorities"), :title => _("Enter your search term here") } %>
-        <button type="submit"><%= _("Search") %></button>
+        <%= text_field_tag 'query', params[:query], { :class => "navigation_search_button", :id => "navigation_search_button", :type => "search", :placeholder => _("Search"), :title => _("type your search term here") } %>
+        <button type="submit">
+          <span class="visually-hidden">
+            <%= _("Submit Search") %>
+          </span>
+        </button>
       </form>
     </li>
   </ul>
