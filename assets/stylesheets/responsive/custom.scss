@@ -259,10 +259,7 @@ a.link_button_green_large {
   // This is the search submit button
   #navigation_search button {
     font-size: 1em;
-    width: 25%;
-    float: left;
-    margin: 0;
-    background: $color_neutral_dark;
+    background-color: $color_neutral_dark;
     border-radius: 0 0.3em 0.3em 0;
 
     &:hover, &:focus {
@@ -272,8 +269,6 @@ a.link_button_green_large {
 
   // Confusingly, this is the search input, not the submit button
   #navigation_search_button {
-    width: 75%;
-    margin: 0;
     border: none;
     border-radius: 0.3em 0 0 0.3em;
     font-size: 1em;
