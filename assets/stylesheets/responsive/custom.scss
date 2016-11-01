@@ -33,8 +33,8 @@ $notice-color: $color_green;
 $error-color: $color_red;
 $action-color: $color_orange;
 
-$logo-width: 214px;
-$logo-height: 44px;
+$logo-width: 90px;
+$logo-height: 90px;
 
 /* Mixin styles */
 
@@ -217,6 +217,11 @@ a.link_button_green_large {
 
 #banner_inner {
   background-color: $color_primary;
+}
+
+#banner .banner_site-title {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 #topnav {
