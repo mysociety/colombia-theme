@@ -1,9 +1,104 @@
-<% @title = "About" %>
+<% @title = "Introducción" %>
 
 <%= render :partial => 'sidebar' %>
 
 <div id="left_column_flip">
- <h1 id="introduction">Introduction to <%= site_name %> <a href="#introduction">#</a> </h1> <p>This is a custom "about" page</p>
+  <h1 id="top">Introducción <a href="#top">#</a> </h1>
+
+  <dl>
+    <dt id="purpose">
+      ¡Bienvenido a Queremosdatos.co! <a href="#purpose">#</a>
+    </dt>
+
+    <dd>
+      <p>Somos la primera web en Colombia a que te facilita solicitar información a cualquier institución pública o a cualquier entidad que maneje o administre recursos públicos. Pide lo que quieras,  nosotros nos encargamos de hacerle llegar tu petición al responsable y te avisamos cuando responda. Todo el proceso es transparente y público para que tú y el resto del mundo puedan seguirlo.</p>
+
+      <p>En Colombia, desde 2014 existe la <a href="http://www.secretariasenado.gov.co/senado/basedoc/ley_1712_2014.html">Ley de Transparencia y Acceso a la Información Pública</a> que rige la manera en la que los ciudadanos podemos acceder a la información de nuestras instituciones.</p>
+
+      <p>Esta página ha sido diseñada por las organizaciones de la sociedad civil para facilitar ese acceso y promocionar este derecho. Así, podremos exigir una rendición de cuentas completa a nuestros gobernantes.</p>
+
+      <p>Además, también facilitamos el trabajo de los funcionarios públicos ya que no tienen que responder varias veces a solicitudes sobre el mismo tema: una vez que se responde una pregunta, queda publicada directamente en la página web.</p>
+
+      <p>Queremosdatos.co se basa en la exitosa página británica de mySociety <a href="https://whatdotheyknow.com/">WhatDoTheyKnow.com</a>. Otras aplicaciones iguales o similares están en en otros países como <a href="http://www.queremossaber.org.br/">Brasil</a>, <a href="http://fragdenstaat.de/">Alemania</a>, <a href="http://www.accesointeligente.org/AccesoInteligente/#home">Chile</a> o <a href="http://informatazyrtare.org/">Kosovo</a>, y a nivel de la Unión Europea con <a href="https://www.asktheeu.org/">AsktheEU</a>.</p>
+    </dd>
+
+    <dt id="premise">
+      ¿Cómo funciona? <a href="#premise">#</a>
+    </dt>
+
+    <dd>
+      <p>Lo primero que necesitas es saber qué tipo de información quieres pedir: es tener una idea. Una vez lo sepas, decide a qué institución quieres pedir la información, datos o documentos. Después, rellena el formulario que te presentamos dejando claro qué quieres. Nosotros enviamos un correo electrónico al organismo correspondiente y te mantenemos al corriente de cuándo llega la respuesta.</p>
+
+      <p>Según la <a href="http://www.secretariasenado.gov.co/senado/basedoc/ley_1437_2011.html#14">Ley 1437 de 2011</a>, las instituciones tienen un plazo máximo de 15 días hábiles para responder a tu petición. De no hacerlo, podrán ser sancionadas.</p>
+
+      <p>En el momento en el que obtenemos una respuesta te la enviamos y automáticamente la publicamos en la Web. Debes indicar si estás satisfecho o no, si necesitas más información o si quieres presentar un recurso. No te preocupes, el sistema te avisará si pasa el plazo y no recibes respuesta.</p>
+
+      <p>Todas las comunicaciones quedarán publicadas en queremosdatos.co para que cualquier persona con la misma pregunta pueda consultarla, sin tener que pasar por el mismo trámite.</p>
+    </dd>
+
+    <dt id="who_can_use">
+      ¿Quién puede utilizar Queremosdatos.co? <a href="#who_can_use">#</a>
+    </dt>
+
+    <dd>
+      <p>Cualquier ciudadano puede enviar solicitudes de acceso a la información a través de esta página. Sólo tienes que tener en cuenta que en Colombia existen algunas limitantes por lo que no podrás solicitar, ni obtendrás, información que viole la intimidad, el derecho de toda persona a la vida, la salud o la seguridad o los secretos comerciales, industriales y profesionales.</p>
+
+      <p>También se te puede negar el acceso a información si el organismo involucrado considera que se pone en riesgo la defensa y seguridad nacional; la seguridad pública, y las relaciones internacionales. Tampoco la darán si consideran que se puede afectar la investigación y persecución de los delitos y las faltas disciplinarias, mientras que no se haga efectiva la medida de aseguramiento o se formule pliego de cargos. Igualmente, si se vulnera el debido proceso y la igualdad de las partes en los procesos judiciales; la administración efectiva de la justicia; los derechos de la infancia y la adolescencia;la estabilidad macroeconómica y financiera del país, o la salud pública.</p>
+    </dd>
+
+    <dt id="not_answered">
+      ¿Qué pasa si me niegan una petición? <a href="#not_answered">#</a>
+    </dt>
+
+    <dd>
+      <p>Si esto sucede, puedes apelar a la decisión presentando un recurso en el que argumentes por qué la información que solicitas no cabe dentro de las restricciones establecidas por la Ley.</p>
+
+      <p>Este recurso lo deberás presentar por escrito y sustentando en la diligencia de notificación, o dentro de los tres días siguientes a la negativa. Si aún así te niegan este recurso, puedes acudir al Tribunal Administrativo con jurisdicción en el lugar donde se encuentren los documentos, si se trata de autoridades nacionales, departamentales o de Bogotá, o al juez administrativo si se trata de autoridades distritales y municipales. Será este organismo quien decida en una única instancia si se niega o se acepta, total o parcialmente, la petición formulada.</p>
+
+      <p>Para ello, el funcionario respectivo enviará la documentación correspondiente al tribunal o al juez administrativo en un plazo no superior a tres días.</p>
+    </dd>
+
+    <dt id="organisations">
+      Las organizaciones detrás de Queremosdatos.co <a href="#organisations">#</a>
+    </dt>
+
+    <dd>
+      <p>Esta web es fruto de una alianza entre Datasketch y mySociety con el fin de promover el acceso a la información y la transparencia en Colombia.</p>
+
+      <h3>Datasketch</h3>
+
+      <p><a href="http://datasketch.co">Datasketch</a> es un portal de periodismo de datos con recursos y herramientas para democratizar el acceso a datos y popularizar los análisis basados en hechos contrastables con diversas fuentes de información. El portal cuenta con noticias y herramientas de visualización en línea.</p>
+
+      <h3>mySociety</h3>
+
+      <p><a href="https://mysociety.org">mySociety</a> es una organización sin ánimo de lucro, con sede en Reino Unido e implantación internacional, cuyo objetivo global es crear herramientas y mecanismos para asegurar y maximizar la transparencia democrática como una vía para el empoderamiento ciudadano, para que estos puedan ejercer control e intervención sobre la agenda política</p>
+    </dd>
+
+    <dt id="team">
+      El equipo <a href="#team">#</a>
+    </dt>
+
+    <dd>
+      <h3>Juan Pablo Marín (<a href="https://twitter.com/jpmarindiaz">@jpmarindiaz</a>)</h3>
+      <p>
+        Juan Pablo es científico de datos. Ha trabajado en temas de estadística computacional aplicada en diversos campos como macroeconomía, hidrología y periodismo de datos. Coordina la plataforma Datasketch.
+      </p>
+
+      <h3>María Isabel Magaña (<a href="https://twitter.com/marisamagar">@marisamagar</a>)</h3>
+
+      <p>
+        Comunicadora social y periodista, máster en Periodismo de Investigación, Datos y Visualización. Se ha desempeñado como periodista en medios nacionales e internacionales como RCN, ValorFuturo, Agencia Efe y El Mundo. Enfocada en el trabajo de fuentes económicas e internacionales, al igual que en el desarrollo de especiales e investigaciones multimedia basadas en datos.
+      </p>
+
+    <dt id="volunteer">
+      ¿Quieres ser voluntario en el proyecto? <a href="volunteer"?>#</a>
+    </dt>
+
+    <dd>
+      <p>Escribenos a <a href="mailto:queremosdatos@datasketch.co">queremosdatos@datasketch.co</a>a y nos pondremos en contacto contigo. ¡Juntos lo hacemos mejor!</p>
+    </dd>
+
+  </dl>
 </div>
 
 
