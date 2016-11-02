@@ -43,7 +43,7 @@
 <dd>
   <p>Por supuesto. Antes de poder enviar una solicitud, todos los usuarios deben registrarse en la página web aportando un e-mail que verificamos.</p>
 
-  <p>Para que el sistema funcione de manera automática, utilizamos direcciones de correo electrónico generadas por ordenador para cada una de las solicitudes. Es por eso que la dirección de contacto que a usted le aparece pone “@datasketch.co”.</p>
+  <p>Para que el sistema funcione de manera automática, utilizamos direcciones de correo electrónico generadas por ordenador para cada una de las solicitudes. Es por eso que la dirección de contacto que a usted le aparece pone “<%= AlaveteliConfiguration::incoming_email_domain %>”.</p>
 </dd>
 
 <dt id="too_many">¡Queremosdatos.co está enviando demasiadas solicitudes! <a href="#too_many">#</a> </dt>
@@ -61,7 +61,7 @@
 
   <p> Puede comprobar la dirección de contacto a la que estamos enviando las peticiones usando el link “Ver dirección de e-mail” que aparece en la página de cada institución. Esta información fue brindada por la Secretaría de Transparencia.</p>
 
-  <p>Por favor, si tiene una dirección mejor que podamos utilizar, le agradeceríamos que se pusiera <a href="/help/contact">en contacto con nosotros</a>. A veces las peticiones son bloqueadas por los “filtros de spam”. Para asegurarse de que esto no ocurra, pida a su departamento de informática que añada cualquier e-mail de @datasketch.co a la lista de remitentes autorizados.</p>
+  <p>Por favor, si tiene una dirección mejor que podamos utilizar, le agradeceríamos que se pusiera <a href="/help/contact">en contacto con nosotros</a>. A veces las peticiones son bloqueadas por los “filtros de spam”. Para asegurarse de que esto no ocurra, pida a su departamento de informática que añada cualquier e-mail de @<%= AlaveteliConfiguration::incoming_email_domain %> a la lista de remitentes autorizados.</p>
 
   <p>Si nos lo pide, podemos reenviar el correo de la solicitud realizada a su institución y/o darle detalles técnicos de la entrega, de manera que su departamento de informática pueda identificar lo que ha ocurrido con el mensaje.</p>
 </dd>
