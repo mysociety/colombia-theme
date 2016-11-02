@@ -13,6 +13,7 @@ Rails.configuration.to_prepare do
     end
     HelpController.class_eval do
         def help_out
+            @contact_email = AlaveteliConfiguration::contact_email
         end
     end
 end

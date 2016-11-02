@@ -1,0 +1,95 @@
+<% @title = "Contáctenos" %>
+
+<%= foi_error_messages_for :contact %>
+
+<h1><%= @title %></h1>
+
+<div id="contact_preamble">
+
+    <% if !flash[:notice] %>
+        <h2>Póngase en contacto con una entidad para obtener información oficial</h2>
+        <ul>
+            <li><a href="<%= new_request_path %>">Aquí</a> para hacer una solicitud, en público, para obtener información de las entidades públicas.</li>
+
+            <li>
+            Pedir información privada acerca de usted mismo?
+            Por favor lea nuestra
+            <a href="<%= help_requesting_path(:anchor => 'data_protection') %>">Página de ayuda </a>.
+            </li>
+        </ul>
+
+    <% end %>
+
+    <h2>Póngase en contacto con el equipo de <%= site_name %></h2>
+    <% if !flash[:notice] %>
+            <ul>
+            <li>
+             Por favor, lea la <a href="<%= help_about_path %>">página de ayuda</a> primero, ya que puede responder a su pregunta más rápido.
+            </li>
+
+            <li> Nos encantaría saber cómo has encontrado este sitio. O rellene este formulario o enviar un correo electrónico a <a
+               href="mailto:<%=@contact_email%>"><%=@contact_email%></a>
+            </li>
+
+            <li>Somos una <strong>organización</strong> no Gubernamental.</li>
+            </ul>
+    <% end %>
+</div>
+
+<%= form_for :contact do |f| %>
+
+    <% if not @user %>
+        <p>
+            <label class="form_label" for="contact_name">Su Nombre:</label>
+            <%= f.text_field :name, :size => 20 %>
+            (o <%= link_to "registrarse", signin_path(:r => request.fullpath) %>)
+        </p>
+        <p>
+            <label class="form_label" for="contact_email">Su Email:</label>
+            <%= f.text_field :email, :size => 20 %>
+        </p>
+    <% end %>
+
+    <p>
+        <label class="form_label" for="contact_subject">Asunto:</label>
+        <%= f.text_field :subject, :size => 50 %>
+    </p>
+
+    <p>
+        <label class="form_label" for="contact_message">Mensaje al equipo de <%= site_name %>:</label>
+        <%= f.text_area :message, :rows => 10, :cols => 60 %>
+    </p>
+
+    <p style="display:none;">
+        <%= f.label :comment, 'Do not fill in this field' %>
+        <%= f.text_field :comment %>
+    </p>
+
+    <% if !@last_request.nil? %>
+        <p>
+            <label class="form_label" for="contact_message">Incluya un enlace a su petición:</label>
+            <%=request_link(@last_request) %>
+            <%= submit_tag "eliminar", :name => 'remove' %>
+        </p>
+    <% end %>
+    <% if !@last_body.nil? %>
+        <p>
+            <label class="form_label" for="contact_message">Incluya un enlace a la autoridad:</label>
+            <%=public_body_link(@last_body) %>
+            <%= submit_tag "eliminar", :name => 'remove' %>
+        </p>
+    <% end %>
+
+    <p class="form_note">
+    Solo podemos ayudarles con <strong>problemas técnicos</strong>, o preguntas sobre la libertad de información.
+    </p>
+
+
+    <div class="form_button">
+        <%= hidden_field_tag(:submitted_contact_form, 1) %>
+        <%= submit_tag "Enviar un mensaje a la organización no gubernamental", :disable_with => "Enviando..." %>
+        &lt;-- Nosotros hemos diseñado este sitio, no el Gobierno!
+    </div>
+
+<% end %>
+

@@ -1,4 +1,4 @@
-<% @title = "Making requests" %>
+<% @title = "Solicitar información a nivel estatal" %>
 
 <%= render :partial => 'sidebar' %>
 <div id="left_column_flip">
@@ -6,280 +6,250 @@
 <h1 id="making_requests"><%= @title %> <a href="#making_requests">#</a> </h1>
 <dl>
 
-<dt id="which_authority">I'm not sure which authority to make my request to, how can I find out? <a href="#which_authority">#</a> </dt>
+<dt id="what_rights">
+1. ¿Tengo derecho a realizar una solicitud? <a href="#what_rights">#</a>
+</dt>
 
 <dd>
-<p>It can be hard to untangle government's complicated structured, and work out
-who knows the information that you want. Here are a few tips:
-<ul>
-<li>Browse or search <%= site_name %> looking for similar requests to yours.</li>
-<li>When you've found an authority you think might have the information, use
-the "home page" link on the right hand side of their page to check what they do
-on their website.</li>
-<li>Contact the authority by phone or email to ask if they hold the kind of
-information you're after.</li>
-<li>Don't worry excessively about getting the right authority. If you get it
-wrong, they ought to advise you who to make the request to instead.
-</li>
-<li>If you've got a thorny case, please <a href="/help/contact">contact us</a> for help.</li>
-</ul>
-
+  <p>Toda persona tiene eI derecho a solicitar y recibir información de cualquier sujeto obligado por la Ley. Las peticiones pueden hacerse de forma oral o escrita, incluida la vía electrónica, que es la que utiliza este portal. En ningún caso podrán ser rechazadas peticiones de información por considerar que tengan una fundamentación inadecuada o estén incompletas.</p>
 </dd>
 
-
-
-<dt id="missing_body">You're missing the public authority that I want to request from! <a href="#missing_body">#</a> </dt>
+<dt id="what_information">
+  2. ¿Qué información puedo solicitar? <a href="#what_information">#</a>
+</dt>
 
 <dd>
-<p>Please <a href="<%= new_change_request_path %>">contact us</a> with the name of the public authority and,
-if you can find it, their contact email address for Freedom of Information requests.
-</p>
-<p>If you'd like to help add a whole category of public authority to the site, we'd love
-to hear from you too.
-</p>
-
+  <p>Puedes solicitar documentos, archivos o todo tipo de información que esté en manos de organismos públicos y que no esté sujeta a reservas legales o que protejan el derecho a la intimidad de terceros.</p>
 </dd>
 
-<dt id="authorities">Why do you include some authorities that aren't formally subject to FOI?<a href="#authorities">#</a> </dt>
+<dt id="which_authority">
+  3. ¿A quién puedo dirigirme? <a href="#which_authority">#</a>
+</dt>
 
 <dd>
-<p><%= site_name %> lets you make requests for information to a range of
-organisations:</p>
+  <p>A través de esta página puedes enviar solicitudes de acceso a la información a cualquier institución pública en Colombia. También puedes pedir información a personas jurídicas o naturales que manejen recursos o información pública.</p>
 
-<ul>
-  <li> Those formally subject to the FOI Act</li>
-  <li> Those formally subject to the Environmental Regulations (a less well  
-  defined group)</li>
-  <li> Those which voluntarily comply with the FOI Act</li>
-  <li> Those which aren't subject to the Act but we think should be, on grounds
-  such as them having significant public responsibilities. 
-  </li>
-</ul>
+  <p>Seguimos construyendo Queremosdatos.co, por lo que puede ocurrir que aún no tengamos algunos contactos o nos falte alguna institución. En este caso, por favor, avísanos e intentaremos encontrarla lo antes posible. Por otra parte, si puedes darnos la información sería estupendo. Así podríamos incluirla rápidamente en la web y otras personas se beneficiarán de tu aportación.</p>
 
-<p>In the last case, we're using the site to lobby for expansion of the
-scope of the FOI Act. Even if an organisation is not legally obliged to respond
-to an FOI request, they can still do so voluntarily.
-</p>
-
+  <p><a href="<%= list_public_bodies_default_path %>">Clic aquí para ver la lista completa de instituciones.</a></p>
 </dd>
-
-<dt id="focused">Why must I keep my request focused?<a href="#focused">#</a> </dt>
 
 <dd>
 
-<p>
-Please put in your request only what is needed so that someone can
-easily identify what information you are asking for. Please do
-<i>not</i> include any of the following:
-</p>
 
-<ul>
-<li>arguments about your cause</li>
-<li>statements that could defame or insult others</li>
-</ul>
-
-<p>
-If you do, we may have to remove your request to avoid problems with
-libel law, which is a pain for both you and us. Short, succinct messages
-make it easier for authorities to be clear what information you are
-requesting, which means you will get a reply more quickly.
-</p>
-
-<p>
-If you want information to support an argument or campaign, Freedom of
-Information is a powerful tool. Although you may not use this site to
-run your campaign, we encourage you to use it to get the information you
-need. We also encourage to run your campaign elsewhere - one effective
-and very easy way is to <%= link_to 'start your own blog',
-"http://wordpress.com/"%>. You are welcome to link to your campaign
-from this site in an annotation to your request (you can make
-annotations after submitting the request).
-</p>
-
-</dd>
-
-<dt id="fees">Does it cost me anything to make a request?<a href="#fees">#</a> </dt>
+<dt id="why_bother">
+  4. ¿Por qué debería solicitar información a las instituciones colombianas? <a href="#why_bother">#</a>
+</dt>
 
 <dd>
+  <p>En una democracia sana, los ciudadanos deben poder saber lo que hacen sus gobiernos.</p>
 
-<p>Making an FOI request is nearly always free.</p>
+  <p>Para poder votar por nuestros representantes, necesitamos poder tener toda la información sobre quién toma las decisiones y en qué criterios se basan. Nuestro Gobierno debe ser abierto, transparente y mostrar qué está haciendo y cómo lo está haciendo.</p>
 
-<p>Authorities often include unnecessary, scary, boilerplate in
-acknowledgement messages saying they "may" charge a fee. Ignore such notices.
-They hardly ever will actually charge a fee.  If they do, they can only charge you if
-you have specifically agreed in advance to pay.  <a
-    href="http://www.ico.gov.uk/upload/documents/library/freedom_of_information/practical_application/chargingafee.pdf">More
-    details</a> from the Information Commissioner.
-</p>
-
-<p>Sometimes an authority will refuse your request, saying that the cost
-of handling it exceeds £600 (for central government) or £450 (for all other
-public authorities). At this point you can refine your
-request. e.g. it would be much cheaper for an authority to tell you the amount
-spent on marshmallows in the past year than in the past ten years.
-</p>
-
+  <p>Además, el derecho de acceso a la información tiene un efecto disuasorio y preventivo. La posibilidad de poder solicitar cualquier información relacionada con la actividad pública hace que haya menos tentación de cometer actos corruptos, e incluso mejora y hace más eficiente el trabajo de las instituciones públicas.</p>
 </dd>
 
+<h2>Localizar la institución pública adecuada</h2>
 
-
-<dt id="quickly_response">How quickly will I get a response? <a href="#quickly_response">#</a> </dt>
+<dt id="finding_authorities">
+  5. ¿Qué pasa si no sé a qué organismo tengo que dirigirme? <a href="#finding_authorities">#</a>
+</dt>
 
 <dd>
-<p>By law, public authorities must respond <strong>promptly</strong> to
-requests.
-</p>
+  <p>Si tienes una pregunta pero no estás seguro del organismo público al que tienes que dirigirte para solicitar la información que necesitas, prueba lo siguiente:</p>
 
-<p>Even if they are not prompt, in nearly all cases they must respond within
-20 working days. If you had to clarify your request, or they are a school,
-or one or two other cases, then they may have more time
-(<a href="/help/officers#days">full details</a>).
-
-<p><%= site_name %> will email you if you don't get a timely response.  You can
-then send the public authority a message to remind them, and tell them if they
-are breaking the law.</p>
-
+  <ul>
+    <li>Consulta o busca en queremosdatos.co solicitudes similares a la tuya.</li>
+    <li>Lee la descripción de cada organismo público para informarte de lo que hacen.</li>
+    <li>Cuando hayas encontrado el organismo que, en tu opinión, posee la información deseada, usa el enlace de la “página principal” para consultar su sitio web.</li>
+    <li>En el caso de que no hayas acudido al organismo correcto, puedes preguntarle dónde deberías enviar tu solicitud. Si lo saben, deberían informarte de ello.</li>
+    <li>Si todavía tienes dudas, por favor ponte en contacto con nosotros para que podamos ayudarte.</li>
+  </ul>
 </dd>
 
-<dt id="no_response">What if I never get a response?<a href="#no_response">#</a> </dt>
+<h2>Consejos sobre las solicitudes</h2>
+
+<dt id="focused">6. ¿Qué constituye una buena solicitud? <a href="#focused">#</a></dt>
 
 <dd>
-<p>There are several things you can do if you never get a response.</p>
-<ul>
-    <li>Sometimes there has been a genuine problem and the authority never
-    received the request. It is worth telephoning the authority and politely
-    checking that they received the request. It was sent to them by email.
-    </li>
-    <li>If they have not received it, the problem is most likely due to
-    "spam filters". Refer the authority to the measures in the answer 
-    '<a href="/help/officers#spam_problems">I can see a request on <%= site_name %>, but we never got it by email!</a>' 
-    in the FOI officers section of this help. 
-    </li>
-    <li>If you're still having no luck, then you can ask for an internal review,
-    and then complain to the Information Commissioner about the authority.
-    Read our page '<a href="/help/unhappy">Unhappy about the response you got?</a>'.
-</ul>
+  <p>Por favor, incluye en tu solicitud la información necesaria para identificar fácilmente la información que estás pidiendo.</p>
+
+  <p>Los mensajes cortos y concisos hacen que sea más fácil para los funcionarios identificar la información que pides, lo que significa que recibirás una respuesta más rápidamente.</p>
+
+  <p>Además, una petición bien formulada da menos razones a los funcionarios para rechazarla por considerarla vaga o poco precisa. Sin embargo, no te preocupes por hacerla perfecta: en principio, en caso de que tu solicitud no sea clara, la institución a la que la envíes debería ponerse en contacto contigo para aclararla.</p>
+
+  <p>Por favor, no incluyas:</p>
+  <ul>
+    <li>Argumentos basados en un tema o causa de tipo personal;</li>
+    <li>Declaraciones que puedan difamar o insultar a terceras personas;</li>
+    <li>Lenguaje ofensivo.</li>
+  </ul>
+  <p>En caso contrario, nos veremos obligados a rechazar tu petición. Si fuera así, te lo haríamos saber y estaríamos siempre dispuestos a discutir caso por caso.</p>
 </dd>
 
-<dt id="not_satifised">What if I'm not satisfied with the response? <a href="#not_satifised">#</a> </dt>
-<dd>If you didn't get the information you asked for, or you didn't get it in time,
-then read our page '<a href="/help/unhappy">Unhappy about the response you got?</a>'.
-</dd>
-
-<dt id="reuse">It says I can't re-use the information I got!<a href="#reuse">#</a> </dt>
-<dd>
-<p>Authorities often add legal boilerplate about the 
-"<a href="http://www.opsi.gov.uk/si/si2005/20051515">Re-Use of Public Sector
-Information Regulations 2005</a>", which at first glance implies you may not
-be able do anything with the information.
-</p>
-
-<p>You can, of course, write articles about the information or summarise it, or
-quote parts of it. We also think you should feel free to republish the
-information in full, just as we do, even though in theory you might not be
-allowed to do so.  See <a href="/help/officers#copyright">our policy on copyright</a>.</p>
-
-</dd>
-
-<dt id="ico_help">Can you tell me more of the nitty gritty about the process of making requests? <a href="#ico_help">#</a> </dt>
+<dt id="data_protection">
+  7. ¿Puedo pedir información sobre mí mismo? <a href="#data_protection">#</a>
+</dt>
 
 <dd>
-<p>Have a look at the
-<a href="http://www.ico.gov.uk/for_the_public/access_to_official_information.aspx">access to official information</a>
-pages on the Information Commissioner's website.</p>
-
-<p>If you're requesting information from a Scottish public authority,
-the process is very similar. There are differences around time
-limits for compliance.
-See the <a href="http://www.itspublicknowledge.info/nmsruntime/saveasdialog.asp?lID=1858&amp;sID=321">Scottish
-Information Commissioner's guidance</a> for details.</p> 
+  <p>No utilices tuderechoasaber.es para acceder a tu propia información personal. Si quieres información sobre ti mismo, utiliza preferiblemente las normas de Protección de Datos. Haz clic aquí para más información.</p>
 </dd>
 
-<dt id="data_protection">Can I request information about myself? <a href="#data_protection">#</a> </dt>
+<dt id="multiple">
+  8. ¿Puedo enviar la misma solicitud a distintos órganos? <a href="#multiple">#</a>
+</dt>
 
 <dd>
-<p>No. Requests made using <%= site_name %> are public, made under the Freedom of
-Information Act, and cannot help you find information about a private
-individual.</p>
+  <p>Puedes pedir la misma información a más de una institución, si bien es mejor empezar por la institución que tenga más posibilidades de tener la información que necesitas.</p>
 
-<p>If you would like to know what information a public
-authority holds about yourself, you should make a "Subject Access Request" in
-private using Data Protection law.  The leaflet "<a
-href="http://www.ico.gov.uk/upload/documents/library/data_protection/introductory/subject_access_rights.pdf">How to access your information</a>" (on the Information Commissioner's
-website) explains how to do this.</p>
+  <p>Si esa institución no cuenta con todos los documentos relevantes, puedes preguntar a quién deberías enviar tu solicitud.</p>
 
-<p>If you see that somebody has included personal information, perhaps
-unwittingly, in a request, please <a href="/help/contact">contact us</a>
-immediately so we can remove it.</p>
+  <p>Actualmente no existe un sistema automático para enviar las peticiones al resto de autoridades, tendrás que copiarlo y pegarlo a mano.</p>
 </dd>
 
+<h2>Respuestas y apelaciones</h2>
 
-<dt id="private_requests">I'd like to keep my request secret! (At least until I publish my story) <a href="#private_requests">#</a> </dt>
-
-<dd><p><%= site_name %> is currently only designed for public requests. All
-responses that we receive are automatically published on the website for anyone
-to read.  </p>
-<p>You should contact the public authority directly if you would like to
-make a request in private.  If you're interested in buying a system which helps
-you manage FOI requests in secret, then <a href="/help/contact">contact us</a>.
-</p>
-</dd>
-
-<dt id="eir">Why can I only request information about the environment from some authorities? <a href="#eir">#</a> </dt>
+<dt id="fees">
+  9. ¿Tendré que pagar por solicitar información? <a href="#fees">#</a>
+</dt>
 
 <dd>
-<p>Some public authorities, such as <a href="http://www.whatdotheyknow.com/body/south_east_water">South East Water</a>,
-don't come under the Freedom of Information Act, but do come under another law called
-the Environmental Information Regulations (EIR). 
-</p>
+  <p>Solicitar información en Colombia es gratuito.</p>
 
-<p>It's a very similar law, so you make a request
-to them using <%= site_name %> in just the same way as an FOI request. The only
-difference is that on the page where your write you request, it reminds you
-that you can only request "environmental information" and tells you what that
-means. It is quite broad.
-</p>
+  <p>Recibir información en formato electrónico es gratuito. Es recomendable indicar en qué formato se prefiere recibir la información.</p>
 
-<p>You can, of course, request environmental information from other
-authorities. Just make a Freedom of Information (FOI) request as normal. The
-authority has a duty to work out if the Environmental Information Regulations
-(EIR) is the more appropriate legislation to reply under. 
-</p>
+  <p>En el caso en que se quiera recibir información impresa, la institución puede cobrar una tasa por realizar estas copias, pero este cobro deberá equivaler únicamente al precio real de la copia y no debería suponer un lucro para la institución.</p>
 </dd>
 
-<dt id="multiple">Can I make the same to request to lots of authorities, e.g. all councils? <a href="#multiple">#</a> </dt>
+<dt id="quickly_response">
+  10. ¿Cuándo obtendré una respuesta? <a href="#quickly_response">#</a>
+</dt>
 
-<dd>We ask you to first send a test version of your request to a few
-authorities. Their responses will help you improve the wording of your request,
-so that you get the best information when you send the request to all of
-the authorities. There is currently no automated system for sending the request
-to the other authorities, you must copy and paste it by hand.
-
-</dd>
-
-<dt id="offsite">I made a request off the site, how do I upload it to the archive?<a href="#offsite">#</a> </dt>
-
-<dd><%= site_name %> is an archive of requests made through the site,
-and does not try to be an archive of all FOI requests. We'll never support uploading
-other requests. For one thing, we wouldn't be able to verify that other
-responses actually came from the authority. If this really matters to you,
-you can always make the same request again via <%= site_name %>.
-</dd>
-
-<dt id="moderation">How do you moderate request annotations? <a href="#moderation">#</a> </dt>
-
-<dd> 
-<p>Annotations on <%= site_name %> are to help
-people get the information they want, or to give them pointers to places they
-can go to help them act on it. We reserve the right to remove anything else.
-</p>
-<p>Endless, political discussions are not allowed.
-Post a link to a suitable forum or campaign site elsewhere.</p>
 <dd>
+  <p>Según la legislación vigente, las instituciones tienen <b>15 días hábiles</b> para contestar a las solicitudes de información.</p>
+
+  <p>En Queremosdatos.co te avisaremos cuando haya pasado este tiempo para que si quieres reclames tu información. Puedes llamar a la institución a la que realizaste la solicitud para preguntar en qué estado se encuentra tu petición.</p>
+
+  <p>Normalmente, al enviar tu solicitud, las instituciones deben darte algún tipo de recibo o e-mail de confirmación. Es recomendable exigir este tipo de documentos por si tuvieras que recurrir en un futuro.</p>
+</dd>
+
+<dt id="reuse">
+  11. ¿Puedo reutilizar la información recibida? <a href="#reuse">#</a>
+</dt>
+
+<dd>
+  <p>En general, la información en manos de las instituciones es “pública” en el sentido de que han sido creadas con el dinero de los contribuyentes. Por lo tanto tendrías que ser libre de utilizar los documentos que recibes y la información que contienen.</p>
+
+  <p>Sin embargo, existen normas que regulan la reutilización de la información del sector público, pero esto solo te concierne si has solicitado un gran volumen de información o una base de datos que pueda afectar a terceros.</p>
+
+  <p>En caso de duda, especialmente si tienes pensado utilizar el material para propósitos comerciales, pregunta al organismo al que has solicitado la información o ponte en contacto con nosotros.</p>
+</dd>
+
+<dt id="no_response">
+  12. ¿Qué pasa si no recibo una respuesta? <a href="#no_response">#</a>
+</dt>
+
+<dd>
+  <p>Si no recibes una respuesta a tiempo, Queremosdatos.co te enviará un correo. Puedes recibir dos tipos de aviso por parte nuestra:</p>
+
+  <ol>
+    <li>El primero, transcurridos 7 días desde que enviaste tu solicitud para que, si lo deseas, contactes con la institución a la que enviaste tu solicitud y puedas preguntar por ésta.</li>
+    <li>El segundo, transcurridos 15 días desde que enviaste tu solicitud para que, si lo deseas, puedas reclamar tu derecho a la información.</li>
+  </ol>
+</dd>
+
+<dt id="not_satisfied">
+  13. ¿Qué pasa si recibo una respuesta que no me satisface? <a href="#not_satisfied">#</a>
+</dt>
+
+<dd>
+  <p>Hay cierto número de casos en los que puedes estar insatisfecho con la respuesta a tu solicitud:</p>
+
+  <ol>
+    <li>Sólo has recibido parte de la información que solicitaste (pero no un rechazo formal), o la información que te ha sido facilitada es irrelevante o no responde completamente a tu pregunta – puedes calificar tu respuesta como “respuesta incompleta”;</li>
+    <li>Te han dicho que la información “no está en poder” del organismo al que enviaste tu solicitud;</li>
+    <li>Te han denegado el acceso a la información o a los documentos que has solicitado;</li>
+    <li>No has recibido ninguna respuesta (“silencio administrativo”).</li>
+  </ol>
+
+  <p>Tendrás la posibilidad de “clasificar” tu respuesta según una lista de categorías (ver punto 15). Si no sabes cómo hacerlo te ayudaremos.</p>
+
+  <p>Si piensas que la respuesta es incorrecta, puedes contactar con la institución o interponer un recurso administrativo.</p>
+</dd>
+
+<dt id="classification">
+  14. Clasificación de las respuestas <a href="#classification">#</a>
+</dt>
+
+<dd>
+  <p>Las respuestas de las administraciones pueden ser muy diversas y según lo que contesten debes reaccionar de una u otra manera:</p>
+
+  <ul>
+    <li>Información recibida: La institución ha contestado a tiempo y con la información solicitada.</li>
+    <li>Información recibida parcialmente: La institución ha contestado a tiempo pero no con toda la información solicitada porque considera que una parte de esta información no debe ser pública.</li>
+    <li>No tiene la información: La institución contesta alegando que no tienen la información</li>
+    <li>Información incompleta: La institución ha contestado a tiempo pero no incluye toda la información solicitada.</li>
+    <li>Información inadecuada: La respuesta de la institución no corresponde a la información solicitada.</li>
+    <li>Silencio: Transcurrido el tiempo que tiene para contestar, la institución no ha contestado.</li>
+    <li>Esperando respuesta</li>
+    <li>Esperando una aclaración</li>
+    <li>Información denegada: la institución ha contestado denegando la información</li>
+    <li>Requiere revisión del administrador: Marca esta casilla si quieres que el administrador revise la pregunta o la respuesta de esta solicitud.</li>
+  </ul>
+
+  <p>En los casos en los que no quedes satisfecho con la respuesta por falta de respuesta, por ser incompleta o inadecuada, recomendamos antes de plantear un recurso dirigirnos de nuevo a la institución que nos contesta para intentar recibir la información solicitada.</p>
+</dd>
+
+<dt id="refusal">
+  15. ¿Cuáles son las causas por las que pueden denegarme la información que he solicitado? <a href="#refusal">#</a>
+</dt>
+
+<dd>
+  <p>La Ley establece en los artículos 18 y 19 que no se dará información que viole la intimidad, el derecho de toda persona a la vida, la salud o la seguridad o los secretos comerciales, industriales y profesionales.</p>
+
+  <p>También se te puede negar el acceso a información si el organismo involucrado considera que se pone en riesgo la defensa y seguridad nacional; la seguridad pública, y las relaciones internacionales. Tampoco la darán si consideran que se puede afectar la investigación y persecución de los delitos y las faltas disciplinarias, mientras que no se haga efectiva la medida de aseguramiento o se formule pliego de cargos.</p>
+
+  <p>Igualmente, si se vulnera el debido proceso y la igualdad de las partes en los procesos judiciales; la administración efectiva de la justicia; los derechos de la infancia y la adolescencia;la estabilidad macroeconómica y financiera del país, o la salud pública.</p>
+
+  <p>Se exceptúan también los documentos que contengan las opiniones o los puntos de vista que formen parte del proceso deliberativo de los servidores públicos.</p>
+
+  <p>Pero esto no debe desmotivante. Si tienes una pregunta, hazla, aunque pienses que pueda ser información no accesible. Si te deniegan la información, el equipo de Queremosdatos.co está dispuesto a aconsejarte sobre la posibilidad de presentar un recurso.</p>
+</dd>
+
+<dt id="resources">
+  16. Los recursos en Colombia <a href="#resources">#</a>
+</dt>
+
+<dd>
+  <p>Cuando la respuesta a tu solicitud invoque la reserva de seguridad y defensa nacional o relaciones internacionales, el solicitante podrá acudir al recurso de reposición, el cual deberá interponerse por escrito y sustentando dentro de los tres días siguientes a la respuesta. Si quieres más información puedes ponerte en contacto con nosotros.</p>
+</dd>
+
+<h2>Moderación de las solicitudes</h2>
+
+<dt id="moderation">
+  17. ¿Cómo se moderan las solicitudes y los comentarios? <a href="#moderation">#</a>
+</dt>
+
+<dd>
+  <p>Animamos a todo el mundo a realizar solicitudes y ofrecemos la posibilidad de que cualquier persona que esté registrada inserte comentarios en tus consultas.</p>
+
+  <p>Nuestro equipo consulta los contenidos con regularidad y nos reservamos el derecho de eliminar declaraciones poco apropiadas, como las de naturaleza ofensiva o potencialmente difamatoria. Si eliminamos alguno de tus comentarios, te lo haremos saber para que podamos aclararlo y buscar una solución.</p>
+
+  <p>Del mismo modo, tú puedes denunciar contenidos inadecuados si los encuentras. Solo tiene que categorizar la solicitud como “Requiere revisión del administrador” y en seguida miraremos la solicitud, también puedes <a href="<%= help_contact_path %>">ponerte en contacto con nosotros</a> y nos lo cuentas.</p>
+</dd>
+
+<dt id="sharing">
+  18. He realizado solicitudes de las que he conseguido respuesta, ¿puedo compartirla en este sitio? <a href="#sharing">#</a>
+</dt>
+
+<dd>
+  <p>Lamentamos decirte que no es posible. Queremosdatos.co archiva las solicitudes realizadas a través del sitio web pero no pretende ser un archivo de todas las solicitudes de información. No se permite cargar otras solicitudes en esta página puesto que no podemos verificar si las respuestas proceden efectivamente de una institución pública.</p>
+  <p>Si deseas hacer pública una respuesta, tienes que volver a realizar la solicitud a través de Queremosdatos.co.</p>
+</dd>
 
 </dl>
 
-<p><strong>Next</strong>, read about <a href="/help/privacy">your privacy</a> --&gt;
+<!--p><strong>Next</strong>, read about <a href="/help/privacy">your privacy</a> --&gt; -->
 
 <div id="hash_link_padding"></div>
 
