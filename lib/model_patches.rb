@@ -6,6 +6,7 @@
 #
 Rails.configuration.to_prepare do
   IncomingMessage.class_eval do
+    # TODO: Remove after upgrade to 0.31.0.0+
     def parse_raw_email!(force = nil)
       # The following fields may be absent; we treat them as cached
       # values in case we want to regenerate them (due to mail
@@ -17,7 +18,7 @@ Rails.configuration.to_prepare do
         ActiveRecord::Base.transaction do
           self.extract_attachments!
           write_attribute(:sent_at, self.mail.date || self.created_at)
-          write_attribute(:subject, self.mail.subject)
+          write_attribute(:subject, convert_string_to_utf8(mail.subject).string)
           write_attribute(:mail_from, MailHandler.get_from_name(self.mail))
           if self.from_email
             self.mail_from_domain = PublicBody.extract_domain_from_email(self.from_email)
