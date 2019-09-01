@@ -7,31 +7,31 @@
 <div id="contact_preamble">
 
     <% if !flash[:notice] %>
-        <h2>Póngase en contacto con una entidad para obtener información oficial</h2>
+        <h2>Ponte en contacto con una entidad para obtener información oficial</h2>
         <ul>
             <li><a href="<%= new_request_path %>">Aquí</a> para hacer una solicitud, en público, para obtener información de las entidades públicas.</li>
 
             <li>
             Pedir información privada acerca de usted mismo?
-            Por favor lea nuestra
+            Por favor, lee nuestra
             <a href="<%= help_requesting_path(:anchor => 'data_protection') %>">Página de ayuda </a>.
             </li>
         </ul>
 
     <% end %>
 
-    <h2>Póngase en contacto con el equipo de <%= site_name %></h2>
+    <h2>Ponte en contacto con el equipo de <%= site_name %></h2>
     <% if !flash[:notice] %>
             <ul>
             <li>
-             Por favor, lea la <a href="<%= help_about_path %>">página de ayuda</a> primero, ya que puede responder a su pregunta más rápido.
+             Por favor, lee la <a href="<%= help_about_path %>">página de ayuda</a> primero, ya que puede responder a su pregunta más rápido.
             </li>
 
             <li> Nos encantaría saber cómo has encontrado este sitio. O rellene este formulario o enviar un correo electrónico a <a
                href="mailto:<%=@contact_email%>"><%=@contact_email%></a>
             </li>
 
-            <li>Somos una <strong>organización</strong> no Gubernamental.</li>
+            <li>Somos una <strong>organización</strong> no gubernamental.</li>
             </ul>
     <% end %>
 </div>
