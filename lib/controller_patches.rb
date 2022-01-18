@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # Add a callback - to be executed before each request in development,
 # and at startup in production - to patch existing app classes.
 # Doing so in init/environment.rb wouldn't work in development, since
@@ -5,15 +6,15 @@
 # See http://stackoverflow.com/questions/7072758/plugin-not-reloading-in-development-mode
 #
 Rails.configuration.to_prepare do
-    # Example adding an instance variable to the frontpage controller
-    GeneralController.class_eval do
-        def mycontroller
-            @say_something = "Greetings friend"
-        end
+  # Example adding an instance variable to the frontpage controller
+  # GeneralController.class_eval do
+  #   def mycontroller
+  #     @say_something = "Greetings friend"
+  #   end
+  # end
+  # Example adding a new action to an existing controller
+  HelpController.class_eval do
+    def help_out
     end
-    HelpController.class_eval do
-        def help_out
-            @contact_email = AlaveteliConfiguration::contact_email
-        end
-    end
+  end
 end

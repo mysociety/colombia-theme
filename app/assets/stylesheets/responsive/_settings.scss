@@ -1,0 +1,55 @@
+$main_menu-mobile_menu_cutoff: 58em;
+$row-width: 64em;
+$body-font-family: "Helvetica Neue", Arial, Helvetica, Helmet, Freesans, sans-serif;
+$base-font-size: 16px;
+
+// Specify the filename and dimensions of your logo file here
+$logo-filename: 'logo.png';
+$logo-highdpi-filename: 'logo@2.png'; //Should be at least 2x the size, in the same proportions
+$logo-width: 90px;
+$logo-height: 90px;
+
+$color_sand: #F7F3EB;
+$color_black: #2D2B29;
+$color_orange: #F7A254; // secondary colour, hero link colour
+$color_blue: #4faded;
+$color_green: #8ABF62; // success colour
+$color_yellow: #ffd836;
+$color_red: #e04b4b; // failure colour
+$color_violet: #a94ca6;
+$color_purple: #5c377f;
+$color_white: #ffffff;
+$color_off_white: #f3f1eb;
+$color_light_grey: #e2dfd9;
+$color_mid_grey: #959287;
+$color_dark_grey: #47443F;
+$color_teal: #30B8C6; // primary colour
+$color_salmon: #F77777; // tertiary colour
+
+$color_neutral_light: $color_sand;
+$color_neutral_dark: $color_black;
+$color_primary: $color_teal;
+$color_secondary: $color_orange;
+
+$body-bg: $color_neutral_light;
+
+$body-font-color: $color_neutral_dark;
+$link-color: darken($color_teal, 20%);
+$action-color: $color_secondary;
+$font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$form_input-bg: $color_white;
+$form-label-font-color: $color_black;
+
+$button-bg: $action-color;
+$button-color: $color_white;
+
+$status-success: $color_green;
+$status-failure: $color_red;
+$status-pending: $color_orange;
+
+$notice-color: $color_green;
+$error-color: $color_red;
+$action-color: $color_orange;
+
+$banner_inner_bg: $color_primary;
+$topnav_bg: darken($color_primary, 10%);
