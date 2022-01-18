@@ -1,90 +1,73 @@
-<% @title = "About our API" %>
+<% @title = "API para programadores" %>
 
 <%= render :partial => 'sidebar' %>
 
-<div id="left_column_flip" class="left_column_flip">
+<div id="left_column_flip">
   <h1><%=@title %></h1>
-  <dl>
-    <dt>Introduction</dt>
-    <dd>
-      <p>This page explains how programmers can make other websites and software
-        interact with  <%= site_name %> via an "API".
-      </p>
 
-      <p> <%= site_name %> does not have a full API yet, but we are gradually adding
-        lots of things that are similar in use to an API as they are requested.
-      </p>
-    </dd>
+  <h2>Introducción</h2>
 
-    <dt>Linking to new requests</dt>
-    <dd>
-      <p>To encourage your users to make links to a particular public authority, use URLs of the form
-        <%= link_to new_request_to_body_path(:url_name => "liverpool_city_council") , new_request_to_body_path(:url_name => "liverpool_city_council") %>.
-        These are the parameters you can add to those URLs, either in the URL or from a form.
-      </p>
-        <ul>
-          <li> <strong>title</strong> - default summary of the new request.</li>
-          <li> <strong>default_letter</strong> - default text of the body of the letter. The salutation (Dear...) and signoff (Yours...) are wrapped round this. </li>
-          <li> <strong>body</strong> - as an alternative to default_letter, this sets the default entire text of the request, so you can customise the salutation and signoff. </li>
-          <li> <strong>tags</strong> - space separated list of tags, so you can find and link up any requests made later, e.g. <em>openlylocal spending_id:12345</em>. The : indicates it is a machine tag. The values of machine tags may also include colons, useful for URIs.
-        </ul>
-    </dd>
+  <p>El proyecto Queremosdatos.co funciona de acuerdo con los principios de los datos abiertos, disponibles para los programadores que quieran utilizarlos en otros sitios web y software.</p>
 
-    <dt>RSS (actually, Atom) feeds</dt>
-    <dd>
-      <p>There are Atom feeds on most pages which list FOI requests, which you can
-        use to get updates and links in XML format. Find the URL of the Atom feed in
-        one of these ways:
-      </p>
-        <ul>
-          <li>Look for the <%= image_tag "feed-16.png", :alt => "RSS icon" %> RSS feed links.</li>
-          <li>Examine the <code>&lt;link rel="alternate" type="application/atom+xml"&gt;</code> tag in the head of the HTML. </li>
-          <li>Add <code>/feed</code> to the start of another URL.
-        </ul>
+  <p>Queremosdatos.co todavía no tiene un API completo pero vamos gradualmente añadiendo una gran cantidad de cosas que semejan en el uso a un API, según requieren los programadores.</p>
 
-        <p>In particular, even complicated search queries have Atom feeds.
-          You can do all sorts of things with them, such as query by authority, by file
-          type, by date range, or by status. See the <a href="<%= advanced_search_path %>">advanced search
-            tips</a> for details.
-        </p>
-    </dd>
+  <hr>
 
-    <dt>JSON structured data</dt>
-    <dd>
-      <p>Quite a few pages have JSON versions, which let you download information about
-        objects in a structured form. Find them by:
-      </p>
-      <ul>
-        <li>Adding <code>.json</code> to the end of the URL. </li>
-        <li>Look for the <code>&lt;link rel="alternate" type="application/json"&gt;</code> tag in the head of the HTML. </li>
-      </ul>
+  <h2>Enlaces a nuevas solicitudes</h2>
 
-      <p>Requests, users and authorities all have JSON versions containing basic
-        information about them. Every Atom feed has a JSON equivalent, containing
-        information about the list of events in the feed.
-      </p>
-    </dd>
+  <p>Para animar tus usuarios a entrar en contacto con una autoridad pública específica utiliza URLs de la forma:
+  <%= link_to new_request_to_body_url(:url_name => "aeropuerto_antonio_roldan_betancur") , new_request_to_body_url(:url_name => "aeropuerto_antonio_roldan_betancur") %>.
+  Estos son los parámetros que puedes añadir a las URLs, bien en la URL en sí, bien desde un formulario:</p>
 
-    <dt>Spreadsheet of all authorities</dt>
-    <dd>
-      <p>
-        A spreadsheet file listing every body in <%= site_name %> is available:
-        <%= link_to "all-authorities.csv", all_public_bodies_csv_path %>
-      </p>
+  <ul>
+    <li> <strong>title</strong> - título predefinido de la nueva solicitud.</li>
+    <li> <strong>default_letter</strong> - exto predefinido del cuerpo de la carta. La formula de encabezamiento (Querido...) y la despedida (Un saludo...) se añadirán al comienzo y al final. </li>
+    <li> <strong>body</strong> - en alternativa a default_letter esto pone como predefinido el texto entero de la solicitud dejándote la posibilidad de personalizar el saludo y la despedida. </li>
+    <li> <strong>tags</strong> - lista de etiquetas separadas con espacios, para que puedas buscar y enlazar posteriormente a las solicitudes realizadas, p.ej. <em>openlylocal spending_id:12345</em>. Los dos puntos (:) indican que la etiqueta contiene un valor ('machine tag'), que puede incluir puntos.
+  </ul>
 
-    </dd>
+  <hr>
 
+  <h2>Feeds RSS (en realidad, Atom)</h2>
 
-    <dt> 5. Write API </dt>
-    <dd>
-      <p>
-        The write API is designed to be used by authorities to create their own requests in the system. The API is currently used by mySociety's <a href="https://github.com/mysociety/foi-register">FOI Register software</a> to support using Alaveteli as a disclosure log for all FOI activity at a particular public body. More technical information about the write API is available on the <a href="https://github.com/mysociety/alaveteli/wiki/API#write-api">Alaveteli wiki</a>.
-      </p>
-    </dd>
-  </dl>
+  <p>En la mayoría de las páginas que incluyen solicitudes de acceso a la información hay feeds Atom que puedes utilizar para obtener actualizaciones y enlaces en formato XML. Puedes encontrar el URL del feed Atom con una de las siguientes opciones:</p>
 
-  <p>Please <a href="<%= help_contact_path %>">contact us</a> if you need an API feature that isn't there yet. It's
-    very much a work in progress, and we do add things when people ask us to.</p>
+  <ul>
+    <li>Busca el <%= image_tag "feed-16.png", :alt => "RSS icon" %> enlace al feed RSS.</li>
+    <li>Examina la declaración <tt>&lt;link rel="alternate" type="application/atom+xml"&gt;</tt>  en la cabecera del código HTML. </li>
+    <li>Añade <tt>/feed</tt> al final de la URL.</li>
+  </ul>
 
-  <div id="hash_link_padding"></div>
+  <p>En particular, incluso las búsquedas avanzadas soportan feeds en formato Atom. Puedes hacer todo tipo de cosa con este formato, como consultas por autoridad, por tipo de archivo, por fecha o por estado.
+
+  <hr>
+
+  <h2>Datos estructurados en JSON</h2>
+
+  <p>Bastantes páginas tienen una versión JSON que permite bajar informaciones sobre los objetos en una forma estructurada. Para encontrarlos:</p>
+
+  <ul>
+    <li>Añade <tt>.json</tt> al final de la URL.. </li>
+    <li>Busca la declaración <tt>&lt;link rel="alternate" type="application/json"&gt;</tt> en la cabecera del código HTML. </li>
+  </ul>
+  </p>
+
+  <p>Solicitudes, usuarios y autoridades, todos tienen una versión JSON con informaciones básicas sobre ellos. Cada formato Atom tiene un equivalente JSON con informaciones sobre los objetos incluidos en el feed.
+  </p>
+
+  <hr>
+
+  <h2>Información sobre todos los organismos públicos de Colombia</h2>
+
+  <p>
+  Una fichero CSV con información sobre todos los organismos de la UE está disponible en el sitio web de <%= site_name %>:
+  <%= link_to "all-authorities.csv", all_public_bodies_csv_url() %>
+  </p>
+
+  <hr>
+
+  <p>Por favor <a href="<%= help_contact_path %>">contáctanos</a> si necesitas funcionalidad en el API que todavía no esté aquí. Es un trabajo en proceso, y añadimos cosas cuando la gente nos lo pide.</p>
+
+<div id="hash_link_padding"></div>
+
 </div>

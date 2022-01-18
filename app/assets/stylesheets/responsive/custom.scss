@@ -47,6 +47,7 @@
 
 .logged_in_bar {
   @include respond-min( $main_menu-mobile_menu_cutoff ){
+	@include grid-column($columns:5);
     padding-top: 1.6em;
   }
 }
@@ -391,9 +392,9 @@ a.link_button_green_large {
 //* locale-list */
 .locale-list {
   @include respond-min($main_menu-mobile_menu_cutoff) {
-    position: relative;
+    position: absolute;
     background-color: transparent;
-    left: -50px;
+    left: ($logo-width + 40px);
     padding-top: 2em;
   }
 }
@@ -402,6 +403,7 @@ p.locale-list-trigger {
   margin-bottom: 0;
   color: $color_white;
   color: rgba(255, 255, 255, 0.8);
+  background-color: darken($color_primary, 10%);
   @include respond-min($main_menu-mobile_menu_cutoff) {
     margin-top: 0;
     border: 1px solid desaturate(lighten($color_primary, 3%), 5%);
@@ -942,4 +944,10 @@ dt {
 // User menu
 .pro-pill {
   background-color: desaturate(darken($color_secondary, 10%), 5%);
+}
+
+/* Header */
+#banner .banner_site-title {
+  padding-top: 0;
+  padding-bottom: 0;
 }

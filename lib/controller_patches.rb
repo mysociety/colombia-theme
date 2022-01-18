@@ -13,8 +13,8 @@ Rails.configuration.to_prepare do
   #   end
   # end
   # Example adding a new action to an existing controller
-  # HelpController.class_eval do
-  #   def help_out
-  #   end
-  # end
+  HelpController.class_eval do
+    def help_out
+    end
+  end
 end

@@ -1,183 +1,113 @@
-<% @title = "Your privacy" %>
+<% @title = "Tu confidencialidad" %>
 
 <%= render :partial => 'sidebar' %>
 
-<div id="left_column_flip" class="left_column_flip">
-  <h1 id="privacy"><%= @title %> <a href="#privacy">#</a></h1>
-  <dl>
+<div id="left_column_flip">
+<h1 id="privacy"><%= @title %> <a href="#privacy">#</a> </h1>
 
-    <dt id="email_address">Who gets to see my email address? <a href="#email_address">#</a> </dt>
+<dl>
 
-    <dd><p>We will not disclose your email address to anyone unless we are obliged to by law,
-        or you ask us to. This includes the public authority that you are sending a
-        request to.  They only get to see an email address
-        @<%= AlaveteliConfiguration::incoming_email_domain %> which is specific to that request.  </p>
-      <p>If you send a message to another user on the site, then it will reveal your
-        email address to them. You will be told that this is going to happen.</p>
-    </dd>
+<dt id="top">¡Bienvenido a Queremosdatos.co! <a href="#top">#</a></dt>
 
-    <dt id="nasty_spam">Will you send nasty, brutish spam to my email address? <a href="#nasty_spam">#</a> </dt>
-    <dd>Nope. After you sign up to <%= site_name %> we will only send you emails
-      relating to a request you made, an email alert that you have signed up for,
-      or for other reasons that you specifically authorise. We will never give or
-      sell your email addresses to anyone else, unless we are obliged to by law, or
-      you ask us to.
-    </dd>
+<dd>
+  <p>En Queremosdatos.co, solamente resulta visible tu nombre para el público general, a no ser que proporcione otra información de carácter confidencial al organismo al que realiza la solicitud.</p>
 
-    <dt id="public_request">Why will my name and my request appear publicly on the site? <a href="#public_request">#</a> </dt>
+  <p>Te recomendamos encarecidamente que no proporciones al organismo al que solicitas información ningún dato de tipo privado, lo cual comprende tu número de teléfono, domicilio, dirección de correo electrónico u otra información de carácter personal, familiar o laboral. No necesitas revelar estos datos para ejercer tu derecho a la información.</p>
 
-    <dd>
-      <p>We publish your request on the Internet so that anybody can read it and
-        make use of the information that you have found. We do not normally delete
-        requests (<a href="#delete_requests">more details</a>).
-      </p>
-      <p>
-        Your name is tangled up with your request, so has to be published as well.
-        It is only fair, as we're going to publish the name of the civil servant who
-        writes the response to your request.  Using your real name also helps people
-        get in touch with you to assist you with your research or to campaign with you.
-      </p>
-      <p>By law, you must use your real name for the request to be a valid Freedom of
-        Information request. See the next question for alternatives if you do not want
-        to publish your full name.
-      </p>
-    </dd>
+  <p>En el caso de que un funcionario público necesite hablar contigo por teléfono para aclarar la solicitud, te recomendamos que te mandes tu número directamente y no a través de esta página web.</p>
+</dd>
 
-    <dt id="real_name">Can I make an FOI request using a pseudonym? <a href="#real_name">#</a> </dt>
+<dt id="email_address">¿Quién puede ver mi dirección de correo electrónico? <a href="#email_address">#</a> </dt>
 
+<dd>
+  <p>Tu dirección de correo electrónico no se mostrará en el sitio web salvo que la incluyas en el mensaje o en el pie de página en tu correo.</p>
 
-    <dd>
-      <p>Technically, you must use your real name for your request to be a valid Freedom of Information request in UK law. See this
-        <a href="http://www.ico.gov.uk/upload/documents/library/freedom_of_information/detailed_specialist_guides/name_of_applicant_fop083_v1.pdf">guidance from the Information Commissioner</a> (January 2009).
-      </p>
+  <p>No revelaremos tu dirección de correo electrónico a terceros, a no ser que estemos obligados por ley o que tú así nos lo pida.</p>
 
-      <p>However, the same guidance also says it is good practice for the public
-        authority to still consider a request made using an obvious pseudonym.
-        You should refer to this if a public authority refuses a request because you
-        used a pseudonym.</p>
+  <p> No proporcionaremos tu dirección de correo electrónico al organismo al que realizas la solicitud. Ellos solamente verán una dirección de email @<%= AlaveteliConfiguration::incoming_email_domain %>, la cual es específica para esa solicitud.</p>
 
-      <p>Be careful though, even if the authority follows this good practice, the
-        pseudonym will probably make it impossible for you to complain to the
-        Information Commissioner later about the handling of your request.
-      </p>
+  <p>Si envías un mensaje a otro usuario del sitio, tu dirección de correo electrónico le será revelada. Se te avisará de que esto va a ocurrir.</p>
+</dd>
 
-      <p>There are several good alternatives to using a pseudonym.</p>
+<dt id="nasty_spam">¿Usarán mi dirección de email en boletines o la venderán a terceros? <a href="#nasty_spam">#</a></dt>
 
-      <ul>
-        <li>Use a different form of your name. The guidance says
-          that "Mr Arthur Thomas Roberts" can make a valid request as "Arthur Roberts",
-          "A. T. Roberts", or "Mr Roberts", but <strong>not</strong> as "Arthur" or "A.T.R.".
-        </li>
-        <li>Women may use their maiden name.</li>
-        <li>In most cases, you may use any name by which you are "widely known and/or
-          is regularly used".</li>
-        <li>Use the name of an organisation, the name of a company, the trading name of
-            a company, or the trading name of a sole trader.</li>
-        <li>Ask someone else to make the request on your behalf.</li>
-        <li>You may, if you are really stuck, ask us to make the request on
-          your behalf. Please <a href="<%= help_contact_path %>">contact us</a> with
-          a good reason why you cannot make the request yourself and cannot
-          ask a friend to. We don't have the resources to do this for everyone.</li>
-      </ul>
+<dd>
+  <p>¡No! Nunca proporcionaremos o venderemos tu dirección de correo electrónico a nadie, salvo que estemos obligados por ley o que tú así nos lo pidas.</p>
 
-      <p>Please do not try to impersonate someone else.</p>
+  <p>Si te inscribes en Queremosdatos.co, te mandaremos exclusivamente emails relacionados con tu solicitud y con otros asuntos a los que tú nos hayas autorizado específicamente, tales como enviarte alertas sobre otras consultas.</p>
+</dd>
 
-    </dd>
+<dt id="public_request">¿Por qué aparecen mi nombre y mi solicitud publicados en esta página web? <a href="#public_request">#</a> </dt>
 
-    <dt id="full_address">They've asked for my postal address! <a href="#full_address">#</a> </dt>
+<dd>
+  <p>Publicamos tu solicitud en internet para que todo el mundo pueda consultar y utilizar la información que has obtenido. No solemos eliminar las solicitudes.</p>
 
-    <dd>
-      <p>If a public authority asks you for your full, physical address, reply to them saying
-        that section 8.1.b of the FOI Act asks for an "address for correspondence",
-        and that the email address you are using is sufficient.
-      </p>
-      <p>
-        The Ministry of Justice has <a href="http://www.justice.gov.uk/guidance/foi-procedural-what.htm">guidance
-          on this</a> &ndash;
-        <em>"As well as hard copy written correspondence, requests that are
-          transmitted electronically (for example, in emails) are acceptable
-          ... If a request is received by email and no postal address is given, the email
-          address should be treated as the return address."
-        </em>
-      </p>
-      <p>As if that isn't enough, the Information Commissioner's
-        <a href="http://www.ico.gov.uk/upload/documents/library/freedom_of_information/practical_application/foi_hints_for_practitioners_handing_foi_and_eir_requests_2008_final.pdf">Hints for Practitioners</a> say
-        <em>"Any correspondence could include a request for information. If it is written (this includes e-mail), legible, gives the name of the applicant, an address for reply (which could be electronic), and includes a description of the information required, then it will fall within the scope of the legislation."</em>
-      </p>
-    </dd>
+  <p>Tu nombre se publica porque forma parte de la solicitud. Es normal que esto sea así, ya que también va a hacerse público el nombre del funcionario que responde a tu solicitud.</p>
 
-    <dt id="postal_answer">No no, they need a postal address to send a paper response! <a href="#postal_answer">#</a> </dt>
+  <p>Al usar su verdadero nombre, estás contribuyendo a que la gente te contacte para apoyarte en tu investigación o hacer campaña contigo.</p>
+</dd>
 
-    <dd>
-      <p>If an authority only has a paper copy of the information that you want,
-        they may ask you for a postal address. To start with, try persuading them
-        to scan in the documents for you. You can even <a href="https://www.whatdotheyknow.com/request/car_parking_charges_policy_and_a#outgoing-532">offer to gift them a scanner</a>, which in that particular case
-        embarrassed the authority into finding one they had already.</p>
+<dt id="real_name">¿Puedo solicitar información usando un seudónimo? <a href="#real_name">#</a> </dt>
 
-      <p>If that doesn't work, and you want to provide your postal address privately
-        in order to receive the documents, mark your request as "They are going to reply by post", and it will
-        give you an email address to use for that purpose.</p>
-    </dd>
+<dd>
+  <p>Se te aconseja que utilices tu verdadero nombre cuando solicites el acceso a documentos públicos. Estás ejerciendo un derecho que constituye la base de una sociedad abierta y democrática, por lo cual debes utilizar tu verdadero nombre.</p>
 
-    <dt id="delete_requests">Can you delete my requests, or alter my name?  <a href="#delete_requests">#</a> </dt>
+  <p>Si consideras que su nombre es muy conocido, por ejemplo si eres famoso o un reconocido periodista que pueda ser identificado por un organismo, puede pedirle a un amigo o compañero que realice la solicitud por ti. Si no sabes cómo proceder, contacta con nosotros e intentaremos ayudarte a realizar la solicitud; sin embargo, tienes que entender que no disponemos de los recursos suficientes para hacer esto con todo el mundo.</p>
 
-    <dd>
+  <p>Te pediremos un nombre y un apellido. Si tienes más de un nombre o apellido puedes utilizarlos también pero como mínimo debes darnos un nombre y un apellido.</p>
 
-      <p><%= site_name %> is a permanent, public archive of Freedom of
-        Information requests. Even though you may not find the response to
-        a request useful any more, it may be of interest to others. For this
-        reason, we will not delete requests.
-      </p>
+  <p>Si detectamos nombres ridículos o seudónimos demasiado obvios, eliminaremos la solicitud y nos pondremos en contacto con el solicitante.</p>
 
-      <p>Under exceptional circumstances we may remove or change your name
-        on the website, <a href="#takedown">see the next question</a>.
-        Similarly, we may also remove other personal information.
-      </p>
-
-      <p>If you're worried about this before you make your request,
-        see the section on <a href="#real_name">pseudonyms</a>.</p>
-
-    </dd>
-
-    <dt id="takedown">Can you take down personal information about me? <a href="#takedown">#</a> </dt>
-
-    <dd>
-
-      <p>If you see any personal information about you on the site which you'd like
-        us to remove or hide, then please <a href="<%= help_contact_path %>">let us know</a>.
-        Specify exactly what information you believe to be problematic and why, and
-        where it appears on the site.</p>
-
-      <p>If it is sensitive personal information that has been accidentally
-        posted, then we will usually remove it. Normally we will only consider
-        requests to remove personal information which come from the individual
-        concerned, but for sensitive information we would appreciate anyone
-        pointing out anything they see.</p>
-
-      <p>We consider that there is a strong public interest in
-        retaining the names of officers or servants of public authorities. We will only
-        remove such names in exceptional circumstances, such as where the disclosure of
-        a name and position of employment would substantially risk an individual's
-        safety. If you are such an official and you wish to have your name removed for
-        such an urgent reason, you must supply us with a request to do so from your
-        line manager. This request must demonstrate that a risk has been perceived
-        which outweighs the public interest, and must demonstrate that efforts have
-        been made to conceal the name on the organisation's own website.</p>
-
-      <p>For all other requests we apply a public interest test to decide
-        whether information should be removed.
-         <a href="http://www.statutelaw.gov.uk/content.aspx?ActiveTextDocId=3190650">Section 32</a>
-        of the Data Protection Act 1998 permits us to do this, as the material we
-        publish is journalistic. We cannot easily edit many types of attachments (such
-        as PDFs, or Microsoft Word or Excel files), so we will usually ask
-        that authorities resend these with the personal information removed.</p>
-
-    </dd>
+  <p>Te pedimos por favor que no te hagas pasar por otra persona.</p>
+</dd>
 
 
-  </dl>
+<dt id="delete_requests">¿Pueden eliminar mi solicitud o modificar mi nombre? <a href="#delete_requests">#</a> </dt>
 
-  <p><strong>Learn more</strong> from the help for <a href="<%= help_officers_path %>">FOI officers</a> --&gt;
+<dd>
 
-    <div id="hash_link_padding"></div>
+  <p><%= site_name %> es un archivo público permanente de acceso a solicitudes de información realizadas en Colombia y respondidas por diferentes organismos públicos. Aunque la respuesta a tu consulta ya no te parezca de utilidad, puede resultar de interés a otras personas. Por este motivo, no eliminamos las solicitudes.</p>
+
+  <p>En circunstancias excepcionales, podemos eliminar o modificar tu nombre en un sitio web, véase la siguiente pregunta. De la misma manera, también podemos eliminar otra información de carácter confidencial.</p>
+</dd>
+
+<dt id="takedown">¿Pueden registrar información confidencial relativa a mi persona? <a href="#takedown">#</a> </dt>
+
+<dd>
+  <p>Si ves en la página alguna información de carácter confidencial relacionada contigo que te gustaría que eliminemos u ocultemos, dínoslo. Especifique exactamente de qué información se trata y por qué puede suponer un problema. Además, explique dónde aparece en el sitio web.</p>
+
+  <p>Cuando se publican datos confidenciales de manera accidental solemos eliminarlos. Por lo general, se suele eliminar la información de carácter privado a petición del individuo afectado, pero si cualquier persona encuentra información confidencial le rogamos que así nos lo indique.</p>
+
+  <p>Pensamos que existe un gran interés público por retener los nombres de los funcionarios o trabajadores públicos de las autoridades. Sólo eliminaremos dichos nombres en circunstancias excepcionales, por ejemplo si se revela el nombre y el puesto desempeñado y ello puede conllevar un riesgo para la seguridad de la persona.</p>
+
+  <p>Si eres funcionario y quieres que eliminemos tu nombre con urgencia por las razones mencionadas, tienes que enviarnos una solicitud a través del responsable de tu departamento u organismo. Esta solicitud tiene que probar que constituye un riesgo que va más allá del interés público, y debe demostrar que se han tomado medidas para ocultar el nombre en la página web de la organización y otros documentos que puedan ser públicos.</p>
+
+  <p>Con el resto de las solicitudes llevamos a cabo una prueba de interés público para decidir si la información debería eliminarse de acuerdo con las normas de Protección de Datos. Consideramos que la información que publicamos es de naturaleza periodística y pertenece a todos.</p>
+</dd>
+
+ <dt id="full_address">¡Un organismo me ha pedido ni número de teléfono y mi dirección! <a href="#full_address">#</a></dt>
+
+ <dd>
+  <p>Si un organismo te pide tu <strong>número de teléfono</strong> para comentar o aclarar tu solicitud, te recomendamos que se lo des directamente a ellos, no a través del sitio web. Si no deseas proporcionar tu número puedes continuar tu consulta a través de email o les puedes pedir el número y concertar una hora para llamar y aclarar la solicitud.</p>
+
+  <p>Si una autoridad pública te pide tu dirección completa (<strong>dirección postal</strong>), respóndeles diciendo que preferirías recibir información a través de correo electrónico.</p>
+</dd>
+
+<dt id="postal_answer">
+  ¡No, necesitan una dirección postal para enviar su respuesta! <a href="#postal_answer">#</a>
+</dt>
+
+<dd>
+  <p>Si un organismo solamente posee una copia en papel de la información que tú deseas, pueden pedirte tu dirección postal. Intenta convencerles de que escaneen los documentos. Si no lo consigues y decides darles su dirección de manera privada para recibir los documentos, especifica en tu solicitud que se trata de un correo postal y que la respuesta se enviará por correo.</p>
+
+  <p><a href="<%= help_contact_path %>">Avísanos</a> cuando obtengas la información y entonces podrás subirla al sitio web. Si escaneas el documento, te daremos una dirección de email que puedes usar con este propósito.</p>
+</dd>
+
+</dl>
+
+<!--p><strong>Learn more</strong> from the help for <a href="/help/officers">FOI officers</a> --&gt; -->
+
+<div id="hash_link_padding"></div>
+
+
 </div>
